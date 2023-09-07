@@ -30,7 +30,7 @@ app.get('/api', (req, res) => {
     current_day: getCurrentDayOfWeek(),
     utc_time: getCurrentUtcTime(),
     track: track,
-    github_file_url: 'https://github.com/username/repo/blob/main/file_name.ext',
+    github_file_url: 'https://github.com/naziba95/Backend_Stage_One/blob/master/app.js',
     github_repo_url: 'https://github.com/naziba95/Backend_Stage_One',
     status_code: 200,
   };
