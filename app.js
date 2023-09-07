@@ -14,10 +14,11 @@ function getCurrentDayOfWeek() {
 
 // Define a function to get the current UTC time
 function getCurrentUtcTime() {
-  // Get the current UTC time as an ISO string
   const currentUtcTime = new Date().toISOString();
-  return currentUtcTime;
+  // Extract the first 19 characters (year, month, day, hour, minute, second)
+  return currentUtcTime.slice(0, 19) + 'Z';
 }
+
 
 // GET endpoint to handle requests
 app.get('/api', (req, res) => {
